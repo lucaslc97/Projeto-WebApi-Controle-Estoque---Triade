@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Projeto_Triade.Service</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Projeto-Triade.Abstraction\Projeto-Triade.Abstraction.csproj" />
+    <ProjectReference Include="..\Projeto-Triade.Model\Projeto-Triade.Model.csproj" />
+  </ItemGroup>
+
+</Project>

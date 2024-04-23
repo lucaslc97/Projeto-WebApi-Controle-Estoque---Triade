@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Projeto_Triade.WebApi</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Projeto-Triade.Abstraction\Projeto-Triade.Abstraction.csproj" />
+    <ProjectReference Include="..\Projeto-Triade.Infrastructure\Projeto-Triade.Infrastructure.csproj" />
+    <ProjectReference Include="..\Projeto-Triade.Model\Projeto-Triade.Model.csproj" />
+    <ProjectReference Include="..\Projeto-Triade.Service\Projeto-Triade.Service.csproj" />
+  </ItemGroup>
+
+</Project>
