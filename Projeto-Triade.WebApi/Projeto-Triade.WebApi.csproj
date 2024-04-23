@@ -19,4 +19,8 @@
     <ProjectReference Include="..\Projeto-Triade.Service\Projeto-Triade.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DTOs\" />
+  </ItemGroup>
+
 </Project>

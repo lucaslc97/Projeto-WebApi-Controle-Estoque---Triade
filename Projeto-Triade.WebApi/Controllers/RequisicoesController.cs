@@ -8,14 +8,16 @@ namespace Projeto_Triade.WebApi.Controllers
     [Route("Relatorio")]
     public class RequisicoesController : ControllerBase
     {
-        public RequisicoesController()
+        private readonly IRequisicaoService _requisicaoService;
+        public RequisicoesController(IRequisicaoService requisicaoService)
         {
+            _requisicaoService = requisicaoService;
         }
 
         [HttpPut("RequisicacaoDeProduto")]
-        public  Task<RequisicoesDeProduto> RequisicacaoDeProduto(string nome, string[] produtosRetirados)
+        public  async Task<RequisicoesDeProduto> RequisicacaoDeProduto(string nome, string[] produtosRetirados)
         {
-            throw new NotImplementedException();
+            return await _requisicaoService.GetRequisicaoProdutosAsync(nome, produtosRetirados);
         }
     }
 }

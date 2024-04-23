@@ -18,6 +18,8 @@ builder.Services.AddSingleton(new ConfigurationVO
 builder.Services.AddScoped<IRelatorioService, RelaorioService>();
 builder.Services.AddScoped<IRelatorioRepository, RelatorioRepository>();
 
+builder.Services.AddScoped<IRequisicaoService, RequisicaoService>();
+builder.Services.AddScoped<IRequisicaoRepository, RequisicaoRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
